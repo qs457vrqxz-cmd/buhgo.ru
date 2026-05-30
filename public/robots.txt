@@ -1,0 +1,26 @@
+# Robots.txt for Buhgalter.tech
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://buhgalter.tech/sitemap.xml
+
+# Disallow admin pages
+Disallow: /admin/
+Disallow: /dashboard/
+
+# Allow important pages
+Allow: /
+Allow: /about
+Allow: /blog
+Allow: /contacts
+Allow: /integrations
+Allow: /uslugi/
+
+# Crawl-delay for Yandex
+User-agent: Yandex
+Crawl-delay: 1
+
+# Host directive for Yandex
+Host: https://buhgalter.tech

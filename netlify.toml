@@ -1,0 +1,14 @@
+[images]
+  remote_images = ["https://source.unsplash.com/.*", "https://images.unsplash.com/.*", "https://ext.same-assets.com/.*", "https://ugc.same-assets.com/.*"]
+
+[build]
+  command = "npm install && npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "20"
+  NEXT_PUBLIC_SUPABASE_URL = "https://placeholder.supabase.co"
+  NEXT_PUBLIC_SUPABASE_ANON_KEY = "placeholder"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
